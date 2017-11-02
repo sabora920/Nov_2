@@ -4,8 +4,8 @@
 function handleCatPictures(){
     $('.thumbnail').on('click', function(event) {
 
-        const targetCat = $(event.currentTarget).find('img').attr('src');
-        const targetCatAlt = $(event.currentTarget).find('img').attr('alt');
+        const targetCat = $(this).find('img').attr('src');
+        const targetCatAlt = $(this).find('img').attr('alt');
 
         console.log(targetCat);
 
